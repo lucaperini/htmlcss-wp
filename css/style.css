@@ -26,18 +26,24 @@ header {
     width:80%;
     height:50px;
     background-color:white;
-    margin: 15px auto;
+    margin: 20px auto;
     margin-bottom: 100px;
 }
 
+main {
+    width:100%;
+    margin-bottom:50px;
+    display:inline-block;
+    }
+
 article {
-    width: calc( 40% - 10px);
+    width: calc( 40% - 10px );
     float: left;
     margin: 0 10px 0px 10px;
 }
 
 aside {
-    width: calc((60% - 10px) / 2);
+    width: calc((60% - 10px) / 2 );
     float: left;
 }
 
@@ -52,29 +58,12 @@ article p{
     
 }
 
-main {
-    width:100%;
-    margin-bottom:50px;
-    display:inline-block;
-    }
-
 footer {
     width:90%;
     margin:0 auto;
     text-align:center;
 }
-
-.jumbotron {
-    width:80%;
-    height: 450px;
-    margin:0 auto;
-    background-image: url(../img/banner.jpg);
-    background-size:cover;
-    border-radius: 20px;
-    position:relative;
-    filter: brightness(0.3);
-    margin-bottom:6px;
-    }
+/* sezione banner(jumbotron): impostazione immagine e contenitore immagine  */
 
 .banner {
     width: 82%;
@@ -87,17 +76,20 @@ footer {
     height:450px;
     text-align:center;
     object-fit: cover;
+    
 }
+/* fine sezione jumbotron: impostazione immagine e contenitore immagine */
 
+/* testo banner(jumbotron)*/
 .banner-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     position:absolute;
-    bottom:150px;
-    left:200px;
+    bottom:140px;
+    left:180px;
     color:white;
-    z-index:100px;
-    margin: 0 auto;
+    
+    
 }
 
 .banner-text p {
@@ -106,11 +98,14 @@ footer {
     width:60%
 }
 
+
 .banner-text h1 {
-    font-size:34px;
+    font-size:30px;
     font-weight:300;
-    
 }
+/* fine sezione testo jumbotron */
+
+/* testo e didascalia header leadership */
 
 .titolo {
     font-family: Arial, Helvetica, sans-serif;
@@ -122,10 +117,45 @@ footer {
 }
 
 .dida {
-    font-family: 'Open Sans', sans-serif;
     color:lightslategray;
 }
+/* fine testo e didascalia header leadership */
 
+/* impostazione opacità immagini */
+.overlay-banner {
+    width:74%;
+    height:448px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position:absolute;
+    top:170px;
+    bottom:100px;
+    z-index:99;
+}
+
+.overlay-aside  {
+    width:250px;
+    height:200px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position:absolute;
+    top:777px;
+    z-index:99;
+    padding:0;
+}
+.overlay-article  {
+    width:560px;
+    height:200px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position:absolute;
+    top:777px;
+    z-index:99;
+    padding:0;
+}
+/* fine impostazione opacità immagini */
+
+/* impostazione immagini aside e  article */
 .aside-img {
     object-fit:cover;
     position:relative;
@@ -133,50 +163,47 @@ footer {
     margin:0 auto;
     width: 250px;
     height:200px;
-    filter: brightness(0.5);
     margin-bottom:10px;
+    margin-right:5px;
 }
     
-
 .img-article {
     object-fit:cover;
     border-radius: 10px;
-    width: 565px;
-    height:200px;
-    filter: brightness(0.5);
+    width: 550px;
+    height:195px;
     margin-bottom:10px;
-    margin-right:2px;
+    margin-right:100px;
 }
+/* fine impostazione immagini aside e article */
+
 
 .main-articles {
     width:100%;
     margin:10px 120px;
 }
 
+/* footer allineato al centro */
 .heart {
     color:red;
     text-align:center;
     display:inline-block;
 }
 
+/* header principale con logo e lista di navigazione */
 #logo {
     width:178px;
     height: 69px;
-    text-align: left;
+    text-align:left;
     border-right: 1px solid rgb(224, 223, 223);
-    padding-right:15px;
     margin-bottom:15px;
-    
+    padding-right: 16px;
     }
 
 #nav li {
     display:inline;
     text-transform: uppercase;
-    margin:3px;
+    padding-right:3px;
     color:lightslategray;
+    margin-top:20px;
 }
-
-
-
-
-
