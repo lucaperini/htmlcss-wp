@@ -1,209 +1,155 @@
 /* RESET */
 *{
-    box-sizing: border-box;
-    margin: 0;
+    box-sizing:border-box;
+    margin:0;
     padding:0;
-    }
-
-/* CLEARFIX */
-.clearfix::after{
+}
+/* FLOAT MANAGER */
+.clearfix::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
-    font-weight: 600;
-    color:lightslategrey;
-    margin-bottom: 10px;
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 header {
-    width:80%;
-    height:50px;
-    background-color:white;
-    margin: 20px auto;
-    margin-bottom: 100px;
+    margin-bottom:2rem;
 }
 
-main {
-    width:100%;
-    margin-bottom:50px;
-    display:inline-block;
-    }
-
-article {
-    width: calc( 40% - 10px );
-    float: left;
-    margin: 0 10px 0px 10px;
+footer{
+    text-align:center;
+    height:40px;
+    margin-bottom:2rem;
 }
 
-aside {
-    width: calc((60% - 10px) / 2 );
-    float: left;
-}
-
-aside, p{
-    color: lightslategrey;
-    width:250px;
-    
-}
-
-article p{
-    width:550px;
-    
-}
-
-footer {
+.container{
     width:90%;
     margin:0 auto;
-    text-align:center;
-}
-/* sezione banner(jumbotron): impostazione immagine e contenitore immagine  */
-
-.banner {
-    width: 82%;
-    margin:0 auto;
+    max-width:1000px;
+    min-width:600px;
 }
 
-.banner img{
+.happy-radius{
     border-radius: 10px;
-    width:90%;
-    height:450px;
-    text-align:center;
-    object-fit: cover;
-    
-}
-/* fine sezione jumbotron: impostazione immagine e contenitore immagine */
-
-/* testo banner(jumbotron)*/
-.banner-text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    position:absolute;
-    bottom:140px;
-    left:180px;
-    color:white;
-    
-    
 }
 
-.banner-text p {
-    font-size:16px;
-    color:white;
-    width:60%
-}
-
-
-.banner-text h1 {
-    font-size:30px;
-    font-weight:300;
-}
-/* fine sezione testo jumbotron */
-
-/* testo e didascalia header leadership */
-
-.titolo {
-    font-family: Arial, Helvetica, sans-serif;
-    margin:130px;
-    margin-top:50px;
-    margin-bottom: 3rem;
-    
-
-}
-
-.dida {
-    color:lightslategray;
-}
-/* fine testo e didascalia header leadership */
-
-/* impostazione opacità immagini */
-.overlay-banner {
-    width:74%;
-    height:448px;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 10px;
-    position:absolute;
-    top:170px;
-    bottom:100px;
-    z-index:99;
-}
-
-.overlay-aside  {
-    width:250px;
-    height:200px;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 10px;
-    position:absolute;
-    top:777px;
-    z-index:99;
-    padding:0;
-}
-.overlay-article  {
-    width:560px;
-    height:200px;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 10px;
-    position:absolute;
-    top:777px;
-    z-index:99;
-    padding:0;
-}
-/* fine impostazione opacità immagini */
-
-/* impostazione immagini aside e  article */
-.aside-img {
-    object-fit:cover;
+.relative{
     position:relative;
-    border-radius: 10px;
-    margin:0 auto;
-    width: 250px;
-    height:200px;
-    margin-bottom:10px;
-    margin-right:5px;
 }
-    
-.img-article {
-    object-fit:cover;
-    border-radius: 10px;
-    width: 550px;
-    height:195px;
-    margin-bottom:10px;
-    margin-right:100px;
+
+.img-wrapper{
+    margin-bottom:2rem;
 }
-/* fine impostazione immagini aside e article */
 
-
-.main-articles {
+.overlay {
+    position:absolute;
     width:100%;
-    margin:10px 120px;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* footer allineato al centro */
-.heart {
+span.heart::after{
+    content:"\2665";
     color:red;
-    text-align:center;
-    display:inline-block;
+    font-size: 1.5rem;
 }
 
-/* header principale con logo e lista di navigazione */
-#logo {
-    width:178px;
-    height: 69px;
-    text-align:left;
-    border-right: 1px solid rgb(224, 223, 223);
-    margin-bottom:15px;
-    padding-right: 16px;
+#main-logo img{
+    height:60px;
+    padding-right:20px;
+    border-right:1px solid lightgray;
+}
+
+section#top-menu{
+    margin:2.1rem 0;
+}
+
+section#top-menu ul li{
+    display:inline;
+    text-transform:uppercase;
+    color:grey;
+    text-decoration:none;
+    font-size:1.1rem;
+    margin-right:.7rem;
+}
+
+section#jumbotron{
+    margin-bottom:2rem;
+    
+}
+
+section#jumbotron img{
+    width:100%;
+    height:430px;
+    object-fit:none;
+    border-radius:10px;
+}
+
+section#jumbotron .jumbotron-text{
+    position:absolute;
+    top:280px;
+    left:4rem;
+    color:white;
+    width:58%;
+
     }
 
-#nav li {
-    display:inline;
-    text-transform: uppercase;
-    padding-right:3px;
-    color:lightslategray;
-    margin-top:20px;
+.jumbotron-text h3{
+    font-size: 1.5rem;
+}
+
+.jumbotron-text p{
+    font:1.15rem;
+}
+
+section#content{
+    margin-bottom:.5rem;
+}
+
+section#content header h1{
+    font-size:2rem;
+}
+
+section#content header h4{
+    color:gray;
+    font-weight:300;
+    font-size:1.1rem
+}
+
+section#content p{
+    color:gray;
+}
+
+section#content aside,
+section#content article{
+    margin:1rem 0;
+    float:left;
+}
+
+section#content aside{
+    width:25%;
+}
+
+section#content article{
+    width: calc(50% - 2rem);
+    margin:1rem;
+}
+
+section#content img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    position:center;
+    margin-bottom: 2rem;
 }

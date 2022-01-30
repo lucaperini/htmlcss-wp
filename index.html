@@ -4,76 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Struttura Wordpress</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Struttura</title>
 </head>
 <body>
-    <!-- header principale logo e lista di navigazione -->
-    <header>
-    <img id="logo" src="img/logo.png" alt="logo-neori">
-    <section id="nav">
-            <ul>
-                <li>features</li>
-                <li>editorials</li>
-                <li>environment</li>
-                <li>blog</li>
-                <li>shop</li>
-                <li>contact</li>
-            </ul>
-    </section>
+    <header class="container">
+        <div id="main-logo">
+            <img src="img/logo.png" alt="logo naori">
+        </div>
+        <section id="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Editorials</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="jumbotron" class="relative happy-radius">
+            <div class="overlay happy-radius"></div>
+            <img src="img/banner.jpg" alt="ragazza che fa yoga">
+            <div class="jumbotron-text">
+                <h3>Pretium ac placerat dui interdum nunc in eros urna morbi</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium qui, earum aliquam impedit voluptatibus sint dolorum, illo rem ad nulla</p>
+            </div>
+        </section>
     </header>
-<!-- contenuto principale -->
-<main class="clearfix">
-    <!-- sezione jumbotron -->
-    <div class="banner">
-        <img src="img/banner.jpg" alt="banner">
-        <div class="overlay-banner"></div>
-        <div class="banner-text">
-            <h1>Pretium ac placerat dui interdum nunc<br>in eros urna morbi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, aperiam, ea quaerat adipisci, nemo magni natus perspiciatis sint soluta alias ab error recusandae cumque corporis architecto</p>
-        </div>
-        </div>
-        <!-- sezione titolo leadership -->
-    <div class="titolo">
-        <h1>Leadership</h1>
-        <p class="dida">Fertenum urna a libero tempus</p>
-    </div>
-    <!-- sezione articoli principali su tre colonne -->
-    <section class="main-articles">
+    <main class="container">
+    <section id="content" class="happy-radius">
+        <header>
+            <h1>Leadership</h1>
+            <h4>In eros urna morbi</h4>
+        </header>
+    <div class="clearfix">
         <aside>
-            <div><img class="aside-img" src="img/img-1.jpg">
-            <div class="overlay-aside"></div>
-            </div>  
-            <h3>Lorem</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate, rerum id quod, corporis aut hic, quam porro aliquid quae omnis repudiandae nulla!
-            </p>
+            <div class="img-wrapper relative">
+                <div class="overlay happy-radius"></div>
+                <img src="img/img-1.jpg" alt="pianta dei soldi">
+            </div>
+            <h4>Lorem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo. Dolor quidem eaque magni. Repellat voluptatum ducimus, obcaecati suscipit dolorem beatae itaque molestiae laboriosam velit architecto nesciunt molestias, culpa dignissimos!</p>
+            
         </aside>
         <article>
-            <div>
-                <img class="img-article" src="img/banner-2.jpg">
-                <div class="overlay-article"></div>
-            <h3>Ipsum</h3>
-            </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate, rerum id quod, corporis aut hic, quam porro aliquid quae omnis repudiandae nulla! Quibusdam veniam recusandae perspiciatis distinctio voluptatum cumque?
-            Quibusdam veniam recusandae perspiciatis distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate, rerum id quod, corporis aut hic, quam porro aliquid quae omnis repudiandae nulla! Quibusdam veniam recusandae perspiciatis distinctio voluptatum cumque? Quibusdam veniam recusandae perspiciatis distinctio.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate, rerum id quod, corporis aut hic, quam porro aliquid quae omnis repudiandae nulla! Quibusdam veniam recusandae perspiciatis distinctio voluptatum cumque?
-            Quibusdam veniam recusandae perspiciatis distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="img-wrapper relative">
+                <div class="overlay happy-radius"></div>
+                <img src="img/banner-2.jpg" alt="pianta dei soldi">
+                </div>
+                    <h4>Lorem</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo. Dolor quidem eaque magni. Repellat voluptatum ducimus, obcaecati suscipit dolorem beatae itaque molestiae laboriosam velit architecto nesciunt molestias, culpa dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo. Dolor quidem eaque magni. Repellat voluptatum ducimus, obcaecati suscipit dolorem beatae itaque molestiae laboriosam velit architecto nesciunt molestias, culpa dignissimos!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo. Dolor quidem eaque magni. Repellat voluptatum ducimus, obcaecati suscipit dolorem beatae itaque molestiae laboriosam velit architecto nesciunt molestias, culpa dignissimos!
+                    </p>
+                
         </article>
         <aside>
-            <div>
-                <img class="aside-img" src="img/img-3.jpg">
-                <div class="overlay-aside"></div>
-            </div>
-            <h3>Lorem</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate, rerum id quod, corporis aut hic, quam porro aliquid quae omnis repudiandae nulla!</p>
+            <div class="img-wrapper relative">
+                <div class="overlay happy-radius"></div>
+                <img src="img/img-4.jpg" alt="pianta dei soldi">
+                </div>
+                    <h4>Lorem</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo. Dolor quidem eaque magni. Repellat voluptatum ducimus, obcaecati suscipit dolorem beatae itaque molestiae laboriosam velit architecto nesciunt molestias, culpa dignissimos!</p>
+                
         </aside>
-    </section>
-</main>
-<!-- fine contenuto principale -->
-<footer>
-    <div>
-        <p class="heart">coded with &hearts;</p>
     </div>
-</footer>
+    </section>
+    </main>
+    <footer class="container">
+        <span class="heart">Designed with</span>
+    </footer>
 </body>
 </html>
